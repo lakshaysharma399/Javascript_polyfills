@@ -5,7 +5,7 @@ Array.prototype.map = function(cb) {
     var ans = [];
     for(i=0; i<this.length; i++){
 
-        ans.push(cb(this[i]));
+        ans.push(cb(this[i], i, index));
 
     } 
 
