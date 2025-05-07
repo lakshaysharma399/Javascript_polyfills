@@ -1,11 +1,9 @@
-
-
 Array.prototype.map = function(cb) {
 
     var ans = [];
-    for(i=0; i<this.length; i++){
+    for(i=0; i<this.size(); i++){
 
-        ans.push(cb(this[i]));
+        ans.push(cb(this[i], i, this));
 
     } 
 
@@ -22,6 +20,4 @@ const ans = arr.map((num) =>{
 
 })
 
-
 console.log(ans);
-
